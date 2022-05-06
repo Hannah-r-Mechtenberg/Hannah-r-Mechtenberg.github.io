@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<!--
+	By Wesley Leong
+-->
+<html>
+	<head>
+		<title>Design | Hannah Mechtenberg</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" href="assets/css/mobile.css" media="(max-width: 1080px)"  type="text/css">
+		<link rel="stylesheet" href="assets/css/main.css" media="(min-width: 1080px)" type="text/css">
+		<link rel="stylesheet" href="assets/css/light.css" id="theme-link" type="text/css">
+		<link rel="stylesheet" href="assets/css/mfglabs_iconset.css" type="text/css">
+		<link rel="stylesheet" href="assets/css/academicons.min.css" type="text/css">
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-7RN7HS804C"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-7RN7HS804C');
+		</script> -->
+
+		<!-- Lightweight client-side loader that feature-detects and load polyfills only when necessary -->
+		<script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
+
+	    <script>
+	    	if (localStorage.getItem('theme') !== null) {
+			  	document.addEventListener('DOMContentLoaded', () => {
+			    	const storedTheme = localStorage.getItem('theme');
+			    	if(storedTheme){
+			        	theme.href = storedTheme;
+			    	}
+			  	})
+			}
+	    </script>
+
+	</head>
+	<body>
+		<div class="nav-desktop">
+			<a href="index" id="name">Hannah Mechtenberg</a>
+			<a href="scholarly-works">Scholarly Works</a>
+			<a href="science-communication">Science Communication</a>
+			<a href="design-portfolio">Design Portfolio</a>
+			<a href="contact">Contact</a>
+		</div>
+
+
+		<div class="nav-mobile">
+		    <button class="drop-button icon icon-reorder icon5x" onclick="showNav()">
+		    </button>
+		    <div class="dropdown-content" id="myDropdown">
+				<a href="index">Home</a>
+				<a href="scholarly-works">Scholarly Works</a>
+				<a href="science-communication">Science Communication</a>
+				<a href="design-portfolio" class="bold900">Design Portfolio</a>
+				<a href="contact">Contact</a>
+			</div>
+		</div>
+
+		<div class="content">
+			<p>This is my logo and graphic design portfolio. My design interests extend to editorial design, which is highlighted on the <a href="hannah-mechtenberg.github.io/science-communication" class="link">Science Communication</a> page. 
+
+			<p>I also designed the mockup for Colorado State University’s <a href="https://www.fm.colostate.edu/sustain/" class="link">Facilities Management Sustainability</a> site, which also features several of my photographs.</p>
+			<p>I am currently accepting logo and branding commissions. Please visit my <a href="hannah-mechtenberg.github.io/contact" class="link">contact</a> page if you are interested.
+			</p>
+			<br><br>
+		</div>
+ 		<div class="art-container">
+			<div class="art-column">
+				<a href="assets/images/speechwave_illustration.png">
+					<img src="assets/images/speechwave_illustration.png" alt="" />
+				</a>
+				<a href="assets/images/lablab_logo_finalorange_logo_wordmark_black.png">
+					<img src="assets/images/lablab_logo_finalorange_logo_wordmark_black.png" alt="" />
+					<p>Rebranding for the Language and Brain Laboratory, under the direction of Dr. Emily Myers at the University of Connecticut. Final package included logo, flexible color palette, and typeface.</p>
+					<p>Designed in 2020.</p>
+				</a>
+				<a href="assets/images/Wordmark_stackedlabel_1000dpi_blacktext.png">
+					<img src="assets/images/Wordmark_stackedlabel_1000dpi_blacktext.png" alt="" />
+					<p>Logo, branding (colors and typefaces), and merchandise consulting for the National Science Foundation Research Traineeship (NSF NRT) grant awarded to Dr. Jim Magnuson and collaborators at the University of Connecticut.</p>
+					<p>Designed in 2020.</p>
+				</a>
+				<a href="assets/images/cncct_logo_500dpi_black_text.png">
+					<img src="assets/images/cncct_logo_500dpi_black_text.png" alt="" />
+					<p>Logo, branding (colors and typefaces), and advertising materials for the National Research Service Award Training Grant (T32) awarded to Drs. Emily Myers and Inge-Marie Eigsti at the University of Connecticut.</p>
+					<p>Designed in 2019.</p>
+				</a>
+				<a href="assets/images/csucompostlogo_500dpi.png">
+					<img src="assets/images/csucompostlogo_500dpi.png" alt="" />
+					<p>Logo for Colorado State University's fledgling composting program. The logo now appears on bagged compost for public sale. Permission to design the logo was personally advocated for during my time as a facilities management intern.</p>
+					<p>Designed in 2018</p>
+				</a>
+			</div>
+			<!-- <div class="art-column">
+				<a href="assets/images/img3.jpg">
+					<img src="assets/images/img3.jpg" alt="" />
+					<h3>Birb</h3>
+					<p>Caption</p>
+				</a>
+				<a href="assets/images/img4.jpg">
+					<img src="assets/images/img4.jpg" alt="" />
+					<h3>Veggies</h3>
+					<p>Caption</p>
+				</a>
+			</div> -->
+		</div>
+		<div id="footer">
+  			<span style="float:right;" class="footer-text">© 2021 Hannah Mechtenberg</span>
+		</div>
+
+		<script>
+			/* When the user clicks on the button, 
+			toggle between hiding and showing the dropdown content */
+			function showNav() {
+			    document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown if the user clicks outside of it
+			window.onclick = function(e) {
+			  	if (!e.target.matches('.drop-button')) {
+			  	var myDropdown = document.getElementById("myDropdown");
+		    	if (myDropdown.classList.contains('show')) {
+		      		myDropdown.classList.remove('show');
+			    }
+			  }
+			}
+		</script>
+	</body>
+</html>	

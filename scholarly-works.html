@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<!--
+	By Wesley Leong
+-->
+<html>
+	<head>
+		<title>Publications | Hannah Mechtenberg</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" href="assets/css/mobile.css" media="(max-width: 1080px)"  type="text/css">
+		<link rel="stylesheet" href="assets/css/main.css" media="(min-width: 1080px)" type="text/css">
+		<link rel="stylesheet" href="assets/css/light.css" id="theme-link" type="text/css">
+		<link rel="stylesheet" href="assets/css/mfglabs_iconset.css" type="text/css">
+		<link rel="stylesheet" href="assets/css/academicons.min.css" type="text/css">
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-7RN7HS804C"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-7RN7HS804C');
+		</script>
+ -->
+		<!-- Lightweight client-side loader that feature-detects and load polyfills only when necessary -->
+		<script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
+
+		<!-- Load the element definition -->
+		<script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+
+	    <script>
+	    	if (localStorage.getItem('theme') !== null) {
+			  	document.addEventListener('DOMContentLoaded', () => {
+			    	const storedTheme = localStorage.getItem('theme');
+			    	if(storedTheme){
+			        	theme.href = storedTheme;
+			    	}
+			  	})
+			}
+	    </script>
+		
+	</head>
+	<body>
+		<div class="nav-desktop">
+			<a href="index" id="name">Hannah Mechtenberg</a>
+			<a href="scholarly-works">Scholarly Works</a>
+			<a href="science-communication">Science Communication</a>
+			<a href="design-portfolio">Design Portfolio</a>
+			<a href="contact">Contact</a>
+		</div>
+
+
+		<div class="nav-mobile">
+		    <button class="drop-button icon icon-reorder icon5x" onclick="showNav()">
+		    </button>
+		    <div class="dropdown-content" id="myDropdown">
+				<a href="index">Home</a>
+				<a href="scholarly-works" class="bold900">Scholarly Works</a>
+				<a href="science-communication">Science Communication</a>
+				<a href="design-portfolio">Design Portfolio</a>
+				<a href="contact">Contact</a>
+			</div>
+		</div>
+
+
+
+ 		<div class="content">
+				
+			<!-- Simply set the `src` attribute to your MD file and win -->
+			<zero-md src="scholarly-works.md">
+				<!-- Wrap with a <template> tag -->
+				<template>
+					<style>
+						* {
+							font-family: 'PT Serif', serif;
+						}
+							
+						hr {
+							border-top: 1px solid #8c8c8c;
+						}
+						
+						h1 {
+							display: inline-block;
+							font-weight: 900;
+							font-size: 36px;
+							margin-bottom: 0.2em;
+						}
+
+						h2 {
+							font-weight: 700;
+							font-size: 28px;
+							margin-bottom: 1em;
+						}
+
+						h3 {
+							font-size: 20px;
+							margin-bottom: 1em;
+						}
+
+						p {
+							font-weight: 400;
+							font-size: 18px;
+							line-height: 1.2em;
+							margin-bottom: 1em;
+						}
+
+
+						a {
+						   /* RESET */
+						   text-decoration: none;
+						   /*line-height: 1;*/
+						   
+						   position: relative;
+						   z-index: 0;
+						   display: inline-block;
+						   /*padding: 0px 2px;*/
+						   overflow: hidden;
+						   color: #285432;
+						   vertical-align: bottom;
+						   transition: color .3s ease-out;
+						}
+
+						a::before {
+						   content: "";
+						   position: absolute;
+						   z-index: -1;
+						   top: 0;
+						   left: 0;
+						   transform: translateY(calc(100% - 1px));
+						   width: 100%;
+						   height: 100%;
+						   background-image: linear-gradient(60deg, #64b576 0%, #64b576 100%);
+						   transition: transform .1s ease-out;
+						}
+
+						a:hover { 
+						   color: #000000; 
+						}
+
+						a:hover::before {
+						   transform: translateY(50%);
+						   transition: transform .1s ease-out;
+						}
+
+					</style>
+				</template>
+			</zero-md>
+		</div>
+		<div id="footer">
+  			<span style="float:right;" class="footer-text">© 2021 Hannah Mechtenberg</span>
+		</div>
+		<script>
+			/* When the user clicks on the button, 
+			toggle between hiding and showing the dropdown content */
+			function showNav() {
+			    document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown if the user clicks outside of it
+			window.onclick = function(e) {
+			  	if (!e.target.matches('.drop-button')) {
+			  	var myDropdown = document.getElementById("myDropdown");
+		    	if (myDropdown.classList.contains('show')) {
+		      		myDropdown.classList.remove('show');
+			    }
+			  }
+			}
+		</script>
+	</body>	
+</html>	

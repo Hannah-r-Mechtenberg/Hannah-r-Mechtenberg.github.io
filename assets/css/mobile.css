@@ -1,0 +1,256 @@
+/* main css styling for personal website */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&family=PT+Sans:ital@0;1&family=PT+Serif:ital@0;1&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,900;1,700;1,900&display=swap');*/
+
+* {
+	font-family: 'PT Serif', serif;
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+  	transition: background-color 0.3s ease, color 0.1s ease;
+}
+
+body {
+	font-family: 'PT Serif', serif;
+}
+
+.nav-desktop {
+	display: none;
+}
+
+.nav-mobile {
+	padding: 2vw 10% 0 10%;
+	width: 80%;
+	max-width: 80%;
+	text-align: right;
+}
+
+.drop-button {
+	border: none;
+	outline: none;
+	margin: 0;
+	padding-bottom: 2vw;
+}
+
+.dropdown-content {
+	display: none;
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	/*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+	z-index: 1;
+}
+
+.dropdown-content a {
+	float: none;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	font-size: 4vw;
+}
+
+.show {
+	display: block;
+	float: right;
+}
+
+#footer {
+	display: block;
+	position: fixed;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 1vw;
+	bottom: 0;
+	width: 80%;
+	bottom: -10px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.footer-text {
+	font-size: 14px;
+}
+
+.btn-publication {
+	cursor: pointer;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	padding: 0px 3px;
+	transition-duration: 0.3s;
+}
+
+a {
+	text-decoration: none;
+}
+
+#profile {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+	/*height: auto; */
+	width: 40%;
+	max-width: 40vw;
+	margin-bottom: 10vw;
+	/*background-color: yellow;*/
+}
+
+#profile-links {
+	display: flex;
+	justify-content: space-between;
+}
+
+.home {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.home h3 {
+	margin-top: 2em;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.bold900 {
+	font-weight: 900;
+}
+
+.nav {
+	font-size: 20px;
+	/*width: 50%;*/
+	margin: 50px 10vw 0 10vw;
+	text-decoration: none;
+}
+
+.nav a {
+	display: inline;
+	float: left;
+    text-align: center;
+    margin: 15px 0px; /* to flush edge of menu with right boundary */
+}
+
+.nav a.active {
+	/*color: #9697ab;*/
+	font-weight: 700;
+	padding-bottom: 8px;
+}
+
+.nav a:hover {
+	transition-duration: 0.3s;
+}
+
+.nav-right {
+    float: right;
+}
+
+.nav-right a {
+	display: inline;
+    margin: 15px 10px;
+}
+
+.nav-right a:last-child {
+	margin: 15px 0 15px 10px; /* to flush edge of menu with right boundary */
+}
+
+
+/* font settings */
+h1 {
+	display: inline-block;
+	font-weight: 900;
+	font-size: 36px;
+	margin-bottom: 0.2em;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 28px;
+	margin-bottom: 1em;
+}
+
+h3 {
+	font-weight: 400;
+	font-size: 18px;
+	margin-bottom: 1em;
+}
+
+p {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.2em;
+	margin-bottom: 1em;
+}
+
+.content {
+	position: absolute;
+	margin: 15vw 10vw 0 10vw;
+}
+
+
+/* art */
+
+.art-container {
+	position: absolute;
+	margin: 200px 10vw 0 10vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 60%;
+}
+
+.art-column {
+	display: flex;
+	flex-basis: 1;
+	flex-flow: row wrap;
+	/*justify-content: space-between;*/
+	overflow-y: scroll;
+	width: 48%;
+	max-width: 48%;
+
+	/* for firefox */
+  scrollbar-width: none;
+  scrollbar-color: white;
+
+}
+
+.art-column::-webkit-scrollbar {
+  width: 0;               /* width of the entire scrollbar */
+}
+
+.art-column::-webkit-scrollbar-track {
+  background: white;        /* color of the tracking area */
+}
+
+.art-column::-webkit-scrollbar-thumb {
+  background-color: grey;    /* color of the scroll thumb */
+  border-radius: 1px;       /* roundness of the scroll thumb */
+  border: 1px grey;  /* creates padding around scroll thumb */
+}
+
+.art-column a {
+	flex-shrink:1;
+	width: 100%;
+	text-align: center;
+}
+
+.art-column a img {
+	flex-shrink: 1;
+	max-width: 100%;
+}
+
+.art-column a h3 {
+	margin: 0em;
+}
+
+.art-column a:hover {
+	background-color: rgba(255, 255, 255, 0.25);
+	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 0 0.5em 0 #506380;
+}
+
+

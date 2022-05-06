@@ -1,0 +1,5 @@
+- publish website on github
+- set up google analytics and get gtag
+
+
+- set up permalinks to scicomm digest pdfs
