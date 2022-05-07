@@ -197,7 +197,7 @@ p {
 
 .art-container {
 	position: absolute;
-	margin: 200px 10vw 0 10vw;
+	margin: 300px 10vw 0 10vw;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -246,6 +246,7 @@ p {
 
 .art-column a h3 {
 	margin: 0em;
+	color: #1c1c1c;
 }
 
 .art-column a:hover {

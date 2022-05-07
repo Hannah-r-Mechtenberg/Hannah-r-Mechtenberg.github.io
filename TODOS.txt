@@ -1,5 +1,7 @@
 - publish website on github
 - set up google analytics and get gtag
 
-
+- set up all placeholder images
+- set up links in homepage
 - set up permalinks to scicomm digest pdfs
+- set up links to publication pdfs/videos
