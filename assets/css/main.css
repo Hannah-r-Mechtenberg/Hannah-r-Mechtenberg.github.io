@@ -21,7 +21,7 @@ body {
 
 #name {
 	font-family: "PT Sans", "Lato", sans-serif;
-	font-size: 60;
+	font-size: 3vw;
 }
 
 #footer {
@@ -144,7 +144,7 @@ a {
 .nav-desktop a {
 	color: #1c1c1c;
 	margin: 0.5em;
-	font-size: 20px;
+	font-size: 1.05vw;
 	align-self: flex-end;
 }
 
@@ -185,6 +185,7 @@ p {
 .scicomm-gallery {
 	display: flex;
 	flex-direction: column;
+	padding-bottom: 5vw;
 }
 
 .scicomm-gallery a {
@@ -218,6 +219,7 @@ p {
 .scicomm-container img {
 	flex-basis: auto;
 	max-width: 20%;
+	object-fit: contain;
 }
 
 .scicomm-container h3 {
@@ -248,6 +250,7 @@ p {
 	/*position: absolute;*/
 	position: static;
 	margin: 300px 25vw 0 25vw;
+	padding-bottom: 3vw;
 	display: flex;
 	align-content: center;
 	/*flex-direction: row;*/
@@ -265,8 +268,8 @@ p {
 	max-width: 80%;
 	gap: 50px;
 	/* for firefox */
-  scrollbar-width: none;
-  scrollbar-color: white;
+    scrollbar-width: none;
+    scrollbar-color: white;
 
 }
 

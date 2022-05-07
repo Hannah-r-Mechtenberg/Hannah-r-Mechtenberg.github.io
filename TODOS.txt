@@ -1,7 +1,11 @@
-- publish website on github
+- fork the repo and publish website on github
 - set up google analytics and get gtag
 
+- contact page
 - set up all placeholder images
 - set up links in homepage
-- set up permalinks to scicomm digest pdfs
-- set up links to publication pdfs/videos
+- set up permissions to scicomm digest pdfs
+- set up permissions to publication pdfs/videos
+
+
+# CV is a permalink - when replacing, make sure link is the same

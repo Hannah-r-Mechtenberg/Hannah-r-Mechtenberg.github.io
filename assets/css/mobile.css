@@ -36,9 +36,10 @@ body {
 
 .dropdown-content {
 	display: none;
-	position: relative;
-	width: 100%;
-	max-width: 100%;
+	margin: auto;
+	position: fixed;
+	width: 80%;
+	max-width: 80%;
 	/*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
 	z-index: 1;
 }
@@ -90,17 +91,69 @@ a {
 #profile {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 20px;
 	/*height: auto; */
 	width: 40%;
 	max-width: 40vw;
+	min-width: 20vw;
 	margin-bottom: 10vw;
 	/*background-color: yellow;*/
 }
 
 #profile-links {
 	display: flex;
+	flex-basis: auto;
 	justify-content: space-between;
+}
+
+#profile-text {
+	text-align: center;
+}
+
+#homepage-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-bottom: 2%;
+}
+
+#homepage-gallery a {
+	/*flex-shrink:1;*/
+	/*width: 100%;*/
+	max-width: 42%;
+	text-align: center;
+	color: #1c1c1c;
+	/*border: 1px solid #B9B9B9;*/
+	/*box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);*/
+	background-color: rgba(255, 255, 255, 0.075);
+	padding: 2%;
+	margin: 1%;
+}
+
+#homepage-gallery a img {
+	/*flex-shrink: 1;*/
+	max-width: 100%;
+	margin-bottom: 1em;
+}
+
+#homepage-gallery a h3 {
+	font-size: 14px;
+	color: #1c1c1c;
+}
+
+#homepage-gallery a p {
+	font-size: 12px;
+	margin: 0.2em;
+}
+
+#homepage-gallery a:hover {
+	background-color: rgba(255, 255, 255, 0.25);
+
+	/* original border shadow */
+/*	box-shadow: 0 0 5px #B9B9B9;
+	border-radius: 5px; */
+
+	/* bottom line */
+	box-shadow: 0px 10px 0px -5px #4EA362;
 }
 
 .home {
@@ -164,7 +217,7 @@ a {
 h1 {
 	display: inline-block;
 	font-weight: 900;
-	font-size: 36px;
+	font-size: 4vw;
 	margin-bottom: 0.2em;
 }
 
@@ -176,7 +229,7 @@ h2 {
 
 h3 {
 	font-weight: 400;
-	font-size: 18px;
+	font-size: 3vw;
 	margin-bottom: 1em;
 }
 
@@ -187,20 +240,79 @@ p {
 	margin-bottom: 1em;
 }
 
+.scicomm-gallery {
+	display: flex;
+	flex-direction: column;
+}
+
+.scicomm-gallery a {
+	margin:0em;
+}
+
+.scicomm-gallery a:hover {
+	background-color: rgba(255, 255, 255, 0.25);
+
+	/* original border shadow */
+/*	box-shadow: 0 0 5px #B9B9B9;
+	border-radius: 5px;
+*/
+	/* right line */
+	box-shadow: 10px 0 0px -5px #4EA362;
+}
+
+.scicomm-container {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	margin: 1em 0em;
+}
+
+.scicomm-container a {
+	flex-basis: auto;
+	width: 100%;
+	text-align: center;
+}
+
+.scicomm-container img {
+	flex-basis: auto;
+	max-width: 20%;
+	object-fit: contain;
+}
+
+.scicomm-container h3 {
+	color: #1c1c1c;
+	flex-basis: auto;
+	font-weight: 700;
+	font-size: 18px;
+	margin: 1em 2em;
+	max-width: 100%;
+}
+
+.scicomm-container p {
+	color: #1c1c1c;
+	flex-basis: auto;
+	margin: 1em 2em;
+	max-width: 70%;
+}
+
 .content {
-	position: absolute;
+	align-content: center;
+	/*display: flex;*/
+	position: static;
 	margin: 15vw 10vw 0 10vw;
 }
 
 
 /* art */
-
 .art-container {
-	position: absolute;
-	margin: 300px 10vw 0 10vw;
+	/*position: absolute;*/
+	position: static;
+	margin: 5vw 10vw 0 10vw;
+	padding-bottom: 8vw;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	align-content: center;
+	/*flex-direction: row;*/
+	justify-content: center;
 	height: 60%;
 }
 
@@ -208,14 +320,14 @@ p {
 	display: flex;
 	flex-basis: 1;
 	flex-flow: row wrap;
-	/*justify-content: space-between;*/
+	justify-content: space-between;
 	overflow-y: scroll;
-	width: 48%;
-	max-width: 48%;
-
+	width: 100%;
+	max-width: 100%;
+	gap: 50px;
 	/* for firefox */
-  scrollbar-width: none;
-  scrollbar-color: white;
+    scrollbar-width: none;
+    scrollbar-color: white;
 
 }
 
@@ -237,6 +349,12 @@ p {
 	flex-shrink:1;
 	width: 100%;
 	text-align: center;
+	color: #1c1c1c;
+	/*border: 1px solid #B9B9B9;*/
+	/*box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);*/
+	background-color: rgba(255, 255, 255, 0.075);
+	padding: 1em;
+	margin: 1em;
 }
 
 .art-column a img {
@@ -245,13 +363,24 @@ p {
 }
 
 .art-column a h3 {
-	margin: 0em;
 	color: #1c1c1c;
+}
+
+.art-column a p {
+	margin: 2em;
 }
 
 .art-column a:hover {
 	background-color: rgba(255, 255, 255, 0.25);
-	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 0 0.5em 0 #506380;
+
+	/* original border shadow */
+/*	box-shadow: 0 0 10px #B9B9B9;
+	border-radius: 5px; */
+
+	/* bottom line */
+	box-shadow: 0px 10px 0px -5px #4EA362;
 }
+
+
 
 

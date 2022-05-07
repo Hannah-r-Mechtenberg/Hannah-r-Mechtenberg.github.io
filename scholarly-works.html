@@ -76,7 +76,12 @@
 						* {
 							font-family: 'PT Serif', serif;
 						}
-							
+
+						mark{
+  						  	color:#1c1c1c;
+  						  	background-color: white;
+						}
+
 						hr {
 							border-top: 1px solid #8c8c8c;
 						}
@@ -108,48 +113,14 @@
 
 
 						a {
-						   /* RESET */
-						   text-decoration: none;
-						   /*line-height: 1;*/
-						   
-						   position: relative;
-						   z-index: 0;
-						   display: inline-block;
-						   /*padding: 0px 2px;*/
-						   overflow: hidden;
-						   color: #285432;
-						   vertical-align: bottom;
-						   transition: color .3s ease-out;
-						}
-
-						a::before {
-						   content: "";
-						   position: absolute;
-						   z-index: -1;
-						   top: 0;
-						   left: 0;
-						   transform: translateY(calc(100% - 1px));
-						   width: 100%;
-						   height: 100%;
-						   background-image: linear-gradient(60deg, #64b576 0%, #64b576 100%);
-						   transition: transform .1s ease-out;
-						}
-
-						a:hover { 
-						   color: #000000; 
-						}
-
-						a:hover::before {
-						   transform: translateY(50%);
-						   transition: transform .1s ease-out;
-						}
-
+						   color:#1c1c1c;}
 					</style>
 				</template>
 			</zero-md>
+			<br><br><br>
 		</div>
 		<div id="footer">
-  			<span style="float:right;" class="footer-text">© 2021 Hannah Mechtenberg</span>
+  			<span style="float:right;" class="footer-text">© 2022 Hannah Mechtenberg</span>
 		</div>
 		<script>
 			/* When the user clicks on the button, 
